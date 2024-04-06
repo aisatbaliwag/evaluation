@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+<section class="admin-section">
+    <header>
+        <nav>
+            <h1>AISAT ONLINE FACULTY TEACHER EVALUATION</h1>
+        </nav>
+        <form action="/adminSignOut" method="POST">
+            <button class="SignOutBtn">Sign out</button>
+        </form>
+    </header>
+    <div class="admin-section-btn">
+        <button class="ranking-btn">Ranking</button>
+        <button class="senior-btn">Teachers</button>
+        <form id="formSwitch" action="/switch" method="POST">
+            <input class="mainSwitch" type="text" value="<%= teacherCode[1].switch %>" name="switch" hidden>
+            <input class="switchSign" type="text" value="" name="switchSign" hidden>
+            <input name="id" value="<%= teacherCode[1]._id %>" hidden> </input>
+            <button type="button" class="evaluationSwitch"><%= teacherCode[1].switchSign %></button>
+        </form>
+    </div>
+    <!-- teachers -->
+
+    <div class="seniorhigh-teachers">    
+        <form action="/tForm" class="senior-teachers" method="POST">
+        <input type="text" id="teacherValue" name="tValue" hidden>
+        <input type="text" id="teacherName" name="tName" hidden>
+        <input name="id" value="<%= teacherCode[0]._id %>" hidden> </input>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('EAB','Editha A. Bulos(EAB)')">Editha A. Bulos(EAB)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('NFT','Noelyn F. Tiensin(NFT)')">Noelyn F. Tiensin(NFT)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('DKA','Danna kate Artigua(DKA)')">Danna kate Artigua(DKA)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('SMJ','Samantha M. Jose(SMJ)')">Samantha M. Jose(SMJ)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('RAC','Realyn A. Cañet(RAC)')">Realyn A. Cañet(RAC)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('RGM','Roxanne G. Maralinao(RGM)')">Roxanne G. Maralinao(RGM)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('HTV','Hellen T. Valdez(HTV)')">Hellen T. Valdez(HTV)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('SIL','Sharra E. Lopez(SIL)')">Sharra E. Lopez(SIL)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('DCM','Darwin C. Mendoza(DCM)')">Darwin C. Mendoza(DCM)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('EBV','Edmark B. Versoza(EBV)')">Edmark B. Versoza(EBV)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('RSL','Ramon S. Lopez Jr.(RSL)')">Ramon S. Lopez Jr.(RSL)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('CVV','Chatlene V. Villadarez(CVV)')">Chatlene V. Villadarez(CVV)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('FNV','Frincess Nicole Ventura(FNV)')">Frincess Nicole Ventura(FNV)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('JLT','Jonh Lerry L. Taruc(JLT)')">Jonh Lerry L. Taruc(JLT)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('ALD','Arnold L. Dela Cruz(ALD)')">Arnold L. Dela Cruz(ALD)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('CCL','Cherilu L. Cunanan(CCL)')">Cherilu L. Cunanan(CCL)</button>
+        <button type="submit" class="seniorteachersbtn" onclick="setActiveTeacher('FBA','Felicisimo B. Acuña(FBA)')">Felicisimo B. Acuña(FBA)</button>
+        </form>
+    </div>
+</section>
+<%- include('partials/footer') %>
