@@ -98,6 +98,10 @@ nav{
 }
 .instructor{
     padding: 6px 30px;
+    font-size: 15px;
+}
+select option{
+    font-size: 18px;
 }
 .section{
     padding: 6px 30px;
@@ -185,6 +189,9 @@ button{
     .score-input{
         font-size: 12px;
         width: 100%;
+    }
+    select option{
+        font-size: 14px;
     }
 
 }

@@ -1,11 +1,9 @@
 let seniorHighJlt = document.querySelector('.seniorHigh');
 let seniorHighTeacher = document.querySelector('.seniorhigh-teachers');
 
-function setActiveTeacher(teacherInitials,teachersFullName){
+function setActiveTeacher(teacherInitials){
     let teacherValueHolder = document.querySelector('#teacherValue');
-    let teacherName = document.querySelector('#teacherName');
     teacherValueHolder.value = teacherInitials;
-    teacherName.value = teachersFullName;
 }
 
 let adminSection = document.querySelector('.admin-section');

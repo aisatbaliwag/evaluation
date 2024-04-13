@@ -46,8 +46,11 @@
     row-gap: 15px;
 }
 .seniorteachersbtn{
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px 40px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
 }
 #adminTableViewBtn{
     padding: 8px 25px;
@@ -58,4 +61,133 @@
     border-width: 1px;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.form-add-teacher{
+    padding: 10px;
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: gray;
+}
+.form-add-teacher input{
+    width: 90%;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 16px;
+}
+.form-add-teacher button{
+    width: 90%;
+    margin: 0 auto;
+    padding: 8px;
+}
+.dynamic-divBtn{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.div-a{
+    display: flex;
+    justify-content: space-around;
+}
+.div-a a{
+ font-size: 18px;
+ width: 45%; 
+ text-align: center;  
+ padding: 10px 0;
+}
+.Update{
+    background-color:green;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.Delete{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.UpdateDiv{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 30px;
+}
+.UpdateDiv h1{
+    font-size: 50px;
+    padding: 15px 0;
+
+}
+.UpdateDiv h3{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.UpdateDiv input{
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.UpdateDiv button{
+    font-size: 18px;
+    padding: 8px 20px;
+    margin-left: 15px;
+}
+.updateBtn{
+    display: flex;
+    justify-content: center;
+}
+.DeleteSection{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 30px;
+}
+.DeleteSection h1{
+    font-size: 50px;
+    padding: 15px 0;
+}
+.DeleteSection h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: red;
+}
+.DeleteSection input{
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.DeleteSection button, a {
+    font-size: 18px;
+    padding: 8px 20px;
+    margin-left: 15px;
+}
+.DeleteSection button{
+    background-color: red;
+    color: white;
+    border: none;
+}
+.DeleteSection a {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+.dynamic-divBtn{
+    width: 300px;
+    background-color: lightgray;
+    padding: 10px;
+}
+.subDiv{
+    margin: 0 auto;
+}
+.teacherTable{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }

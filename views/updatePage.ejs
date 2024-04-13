@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+    <section>
+        <div class="UpdateDiv">
+            <h1>Update Teacher</h1>
+            <div>
+                <form id="updateForm" action="/UpdateTeacher" method="POST">
+                    <div>
+                         <h3><%= instructorName.Instructor %></h3>
+                         <input type="text" name="UpdatedTeacher" value="<%= instructorName.Instructor %>" placeholder="<%= instructorName.Instructor %>" name="updateTeacher" required>
+                    </div>
+                    <input type="text" name="id" value="<%= instructorName._id %>" hidden>
+                </form>
+                <div class="updateBtn">
+                    <form action="/back" method="POST">
+                    <button class="Delete">Cancel</button>
+                    </form>
+                    <div>
+                    <button id="update" class="Update">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<%- include('partials/footer') %>
