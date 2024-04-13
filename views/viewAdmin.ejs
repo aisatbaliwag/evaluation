@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%- include('partials/header') %>
 <section class="admin-section">
     <header>
@@ -46,4 +47,54 @@
         </form>
     </div>
 </section>
+=======
+<%- include('partials/header') %>
+<section class="admin-section">
+    <header>
+        <nav>
+            <h1>AISAT ONLINE FACULTY TEACHER EVALUATION</h1>
+        </nav>
+        <form action="/adminSignOut" method="POST">
+            <button class="SignOutBtn">Sign out</button>
+        </form>
+    </header>
+    <div class="admin-section-btn">
+        <form action="/ranking" method="POST">
+        <button class="ranking-btn">Ranking</button>
+        </form>
+        <button class="senior-btn">Teachers</button>
+        <form id="formSwitch" action="/switch" method="POST">
+            <input class="mainSwitch" type="text" value="<%= teacherCode[1].switch %>" name="switch" hidden>
+            <input class="switchSign" type="text" value="" name="switchSign" hidden>
+            <input name="id" value="<%= teacherCode[1]._id %>" hidden> </input>
+            <button type="button" class="evaluationSwitch"><%= teacherCode[1].switchSign %></button>
+        </form>
+    </div>
+    <!-- teachers -->
+
+    <div class="seniorhigh-teachers">
+        <form action="/addTeacher" method="POST" class="form-add-teacher">
+            <input type="text" name="Instructor" placeholder="Add teacher here" required>
+            <button>ADD TEACHER</button>
+        </form>    
+        <form action="/tForm" class="senior-teachers" method="POST">
+        <input type="text" id="teacherValue" name="tValue" hidden>
+        <input name="id" value="<%= teacherCode[0]._id %>" hidden> </input>
+        <div class="teacherTable">
+        <% instructorName.forEach(instructor => { %>
+            <div class="dynamic-divBtn">
+                <div class="subDiv">
+                  <Button class="seniorteachersbtn" onclick="setActiveTeacher('<%= instructor.Instructor %>')"><%= instructor.Instructor %></Button>
+                </div>
+                <div class="div-a">
+                 <a href="/updatePage/<%= instructor._id%>" class="Update">Update</a>
+                 <a href="/deleteView/<%= instructor._id%>" class="Delete">Delete</a>
+                </div>
+            </div>
+          <% }); %>
+        </div>
+        </form>
+    </div>
+</section>
+>>>>>>> c589743 (add teacher,update and delete)
 <%- include('partials/footer') %>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -202,4 +203,210 @@ button{
     .section{
         width: 45%;
     }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: orange;
+}
+header{
+    width: 100%;
+    background-color: #000d70;
+    margin-top: 5px;
+}
+nav{
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 0);
+}
+.main{
+    width: 100%;
+}
+.form{
+    display: none;
+    background-color: #F6F4F1;
+}
+.form.active{
+    display: block;
+}
+.form-div{
+    width: 97%;
+    margin: 0 auto;
+}
+.main-table{
+    width: 100%;
+    th{
+        font-size: 18px;
+    }
+    th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+      padding: 8px;
+    }
+    td{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+      padding: 8px;
+    }
+    tr:nth-child(even){background-color: #f2f2f2;}
+    tr:hover {background-color: #ddd;}
+}  
+.comments{
+    width: 100%;
+    font-size: 20px;
+}
+
+.btn-div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 15px;
+}
+.back-btn{
+    padding: 8px 25px;
+    background-color: #000d70;
+    color: yellow;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.next-btn{
+    padding: 8px 25px;
+    background-color: #000d70;
+    color: yellow;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.submit-btn{
+    padding: 8px 25px;
+    background-color: #000d70;
+    color: yellow;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.instructor{
+    padding: 6px 30px;
+    font-size: 15px;
+}
+select option{
+    font-size: 18px;
+}
+.section{
+    padding: 6px 30px;
+}
+.score-input{
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+}
+button{
+    margin-bottom: 20px;
+}
+.ave{
+    display: none;
+}
+#admin-table{
+    width: 98%;
+    margin: 0 auto;
+}
+#admin-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  padding: 8px;
+}
+#admin-table td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  padding: 8px;
+}
+.th-comments{
+    width: 50%;
+}
+#admin-table{
+    background-color: #fff;
+}
+.teaching-cell{
+    background-color: lightblue;
+}
+.management-cell{
+    background-color: lightgoldenrodyellow;
+}
+.guidance-cell{
+    background-color: lightgreen;
+}
+.personal-cell{
+    background-color: lightsalmon;
+}
+.admin-btn{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    padding: 7px 15px;
+    background-color: orange;
+    border: 0;
+    font-size: 14px;
+}
+#teacherValueHolder{
+    display: none;
+}
+@media only screen and (max-width:500px){
+    .admin-btn{
+        display: none;
+    }
+    nav{
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    .main-table th{
+        font-size: 15px;
+    }
+    .instructor{
+        padding: 2px; 
+    }
+    .section{
+        padding: 2px;
+    }
+    .main-table td{
+        font-size: 14px;
+    }
+    .score-input{
+        font-size: 12px;
+        width: 100%;
+    }
+    select option{
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width:375px){
+    .instructor{
+        width: 45%;
+    }
+    .section{
+        width: 45%;
+    }
+>>>>>>> c589743 (add teacher,update and delete)
 }
