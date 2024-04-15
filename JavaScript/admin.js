@@ -2,7 +2,7 @@ let btnAdmin = document.querySelector('.admin-btn');
 
 btnAdmin.addEventListener('click', login);
 function login(){
-    let password = 'aisatbaliwagadmin1';
+    let password = 'aisatbaliwagadmin';
     let inputPassword = prompt("please enter the password");
     let valid = true;
 
