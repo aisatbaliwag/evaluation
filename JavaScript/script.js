@@ -202,12 +202,12 @@ function submit (e) {
             final18 = userAnswer18;
             final19 = userAnswer19;
             final20 = userAnswer20;
-            alert("Submitted to "+ instructor.value);
             // computedAverage = Number(final1) + Number(final2) + Number(final3) + Number(final4) + Number(final5) + Number(final6) + Number(final7) + Number(final8) + Number(final9) + Number(final10) + Number(final11) + Number(final12) + Number(final13) + Number(final14) + Number(final15) + Number(final16) + Number(final17) + Number(final18) + Number(final19) + Number(final20);
             // division =  computedAverage / 20;
             // average.value = division;
-            back.style.display = "none"
+            document.querySelector("#back-btn").style.display = "none"
             submitBtn.style.display = "none"
+            alert("Submitted to "+ instructor.value);
         }
     }
 }
