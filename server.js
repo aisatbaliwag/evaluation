@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+const port = process.env.PORT || 3000;
 dotenv.config()
 const ejs = require('ejs');
 app.use(express.json());
@@ -355,6 +356,6 @@ app.post("/UpdateTeacher", async function (req, res) {
   
 
   
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log('server started')
 })
