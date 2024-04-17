@@ -15,7 +15,7 @@
                         <table class="main-table">
                             <tr>
                                 <input type="text" name="" value="<%= teacherCode[1].switch %>" id="hiddenSwitch" hidden>
-                                <th>INSTRUCTOR: <select name="teacher" class="instructor">
+                                <th>INSTRUCTOR: <select name="teacher" class="instructor" required>
                                     <option value="">Select Instructor</option>
                                     <% instructorName.forEach(instructor => { %>
                                         <option value="<%= instructor.Instructor %>"><%= instructor.Instructor %></option>
@@ -24,7 +24,7 @@
                                 <th>SCORE:1-5</th>
                             </tr>
                             <tr>
-                                <th colspan="2">Section:<input type="text" oninput="this.value = this.value.toUpperCase()" class="section" name="section"></th>
+                                <th colspan="2">Section:<input type="text" oninput="this.value = this.value.toUpperCase()" class="section" name="section" placeholder="Section" required></th>
                             </tr>
                             <tr>
                                 <th colspan="2">I.TEACHING COMPETENCE</th>
