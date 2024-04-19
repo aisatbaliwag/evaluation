@@ -14,4 +14,10 @@ seniorHighTeachersBtn.addEventListener('click', openSeniorHigh);
 function openSeniorHigh (){
     adminSectionBtn.style.display = "none";
     seniorHighTeachers.style.display = 'block';
+    document.querySelector(".adminViewBack").style.display = 'block';
+}
+function backBtn(){
+    adminSectionBtn.style.display = "";
+    seniorHighTeachers.style.display = 'none';
+    document.querySelector(".adminViewBack").style.display = 'none';
 }
