@@ -191,3 +191,26 @@
     gap: 10px;
     justify-content: center;
 }
+.ranking-table{
+    width: 90%;
+    margin: 0 auto;
+    th{
+        font-size: 18px;
+    }
+    th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+      padding: 8px;
+    }
+    td{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+      padding: 8px;
+    }
+    tr:nth-child(even){background-color: #f2f2f2;}
+    tr:hover {background-color: #ddd;}
+}

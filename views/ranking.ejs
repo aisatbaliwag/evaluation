@@ -1,17 +1,20 @@
 <%- include('partials/header') %>
 <section>
     <div>
-        <table class="main-table" style="background-color: whitesmoke;">
+        <header>
+            <nav>
+                <h1>TEACHER EVALUATION RANKING</h1>
+            </nav>
+        </header>
+        <table class="ranking-table" style="background-color: whitesmoke;">
             <tr>
                 <th style="width: 5%;">Rank</th>
                 <th>teacher</th>
                 <th>Total Average</th>
             </tr>
 
-            <% let count = 1; %>
-
             <% instructorName.forEach(instructor => { %>
-                <tr>
+                <tr hidden>
                     <%
             let totalEntries = 0;
             let sumQ1 = 0, sumQ2 = 0, sumQ3 = 0, sumQ4 = 0, sumQ5 = 0, sumQ6 = 0,
@@ -142,8 +145,8 @@
                 let totalAverage = (teachingAverage + managementAverage + guidanceAverage + personalAverage) / 20;
                 %>
                 </tr>
-                <tr>
-                    <td class="tableRows" style="font-weight: 600;"><%= count++ %>.</td>
+                <tr class="TR">
+                    <td class="tableRows" style="font-weight: 600;"></td>
                     <td><%= instructor.Instructor  %></td>
                     <td style="font-weight: 600"><%= (totalAverage).toFixed(2) %></td>    
                 </tr>
